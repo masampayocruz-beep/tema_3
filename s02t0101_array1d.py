@@ -1,25 +1,13 @@
 import array as arr
-#creacion de un arreglo
-#i = Entero con signo
-#Numero Decimal 
-#Numero decimal doble
-#Caracteres unicode
-my_array = arr.array ('i',[10, 22, 300, 3, 7, 40, 55, 654, 22])
 
-#iteraccion automatica
-for num in my_array:
-#   print(num)
+def print_array(arreglo):
+    print(list(arreglo))
 
-#Acceso individual a los elementos
-#print(my_array[0]) #Primer elemento
-#print(my_array[1]) #Segundo elemento
-#print(my_array[2]) #Tercer elemento
+my_array = arr.array('i', [10, 22, 300, 3, 7, 40, 55, 654, 22, 100, 200, 300, 400, 500])
 
-#Tamaño de un arreglo
-#Lenght
-#print(len(my_array))
-
-#Iteraccion de indices
- for i in range(len(my_array)):
-    if my_array[i] % 2 == 0:
-        print(f"Elemento num {i+1}: {my_array[i]}")
+# Ocultamos tu for aquí para que solo corra si ejecutas este archivo directamente
+if __name__ == '__main__':
+    #Iteraccion de indices
+    for i in range(len(my_array)):
+        if my_array[i] % 2 == 0:
+            print(f"Elemento num {i+1}: {my_array[i]}")
